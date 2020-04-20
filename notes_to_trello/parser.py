@@ -58,7 +58,9 @@ class Parser():
                                 else:
                                     # due date does not meet ISO 8601 formatting
                                     print("Skipping due date [{}] in file '{}' as does not follow ISO8601 formatting".format(due_date, path))
-                            
+
+                            raise Exception('dev break: need how does due date interact with the card name? \
+                                            Do we assume the name is over when we hit the duedate?')
 
 
 
